@@ -1,15 +1,11 @@
 import React from 'react'
 import './App.css';
 import Typewriter from "typewriter-effect";
-
-
 import Cursor from 'react-cursor-follow'
  
 
 
 function App() {
-
-
   return (
     <section className='body'>
    <Cursor
