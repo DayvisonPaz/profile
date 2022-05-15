@@ -20,6 +20,8 @@
 .body{width: 100vw;
 overflow: hidden;
 }
+span{margin: auto;}
+
   .title
   {
    
@@ -32,10 +34,13 @@ overflow: hidden;
       #fff800 100%
     );
     background-size: auto auto;
-
+    background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
-   
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
         font-size: 300%;
@@ -60,6 +65,10 @@ overflow: hidden;
     }
     a{text-decoration: none;}
     .project{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       height: 20vh;
       width:100vw;
       text-align: center;
